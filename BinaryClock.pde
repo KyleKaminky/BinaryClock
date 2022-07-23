@@ -1,8 +1,8 @@
 final int BIT_SIZE = 50;
 final int BG_COLOR = #28262C;
-final int ON_COLOR = #087E8B;
-final int OFF_COLOR = #F4EBE8;
-int text_color = #F4EBE8;
+final int ON_COLOR = #68D89B; 
+final int OFF_COLOR = #3E3B44; 
+final int TEXT_COLOR = #F4EBE8;
 int s,m,h;
 int sd = 10;
 int center_x, center_y;
@@ -59,7 +59,7 @@ void draw() {
     
     //-----
     if (draw_helper) {
-      fill(text_color);
+      fill(TEXT_COLOR);
       textSize(50);
       text(t_10_i, center_x - width/sd/2, center_y + 5.5*height/sd/2);
       text(t_1_i, center_x + width/sd/2, center_y + 5.5*height/sd/2);
@@ -67,7 +67,7 @@ void draw() {
     
   }
   if (draw_helper) {
-    fill(text_color);
+    fill(TEXT_COLOR);
     textSize(100);
     text(h + ":" + m + ":" + s, width/2, height/4);
     textSize(50);
@@ -75,7 +75,7 @@ void draw() {
     text("2", width/2 - 3.5*width/sd, center_y + 1.3*height/sd/2);
     text("4", width/2 - 3.5*width/sd, center_y - 0.7*height/sd/2);
     text("8", width/2 - 3.5*width/sd, center_y - 2.7*height/sd/2);
-    stroke(text_color);
+    stroke(TEXT_COLOR);
     line(200, center_y + 4.3*height/sd/2, 800, center_y + 4.3*height/sd/2);
     for (int i = -2; i <= 2; i++) {
       line(width/2 + i*width/sd, center_y - 3.7*height/sd/2, width/2 + i*width/sd, center_y + 5.8*height/sd/2);
