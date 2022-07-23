@@ -13,6 +13,7 @@ void setup() {
   size (1000,1000);
   pixelDensity(displayDensity());
   textAlign(CENTER);
+  frameRate(60);
 }
 
 void draw() {
@@ -57,7 +58,7 @@ void draw() {
       circle(center_x + width/sd/2, center_y + offset_y*height/sd/2, BIT_SIZE);
     }
     
-    //-----
+    //----- Helper Numbers -----
     if (draw_helper) {
       fill(TEXT_COLOR);
       textSize(50);
@@ -66,6 +67,7 @@ void draw() {
     }
     
   }
+  // ----- Helper Lines and Numbers -----
   if (draw_helper) {
     fill(TEXT_COLOR);
     textSize(100);
@@ -81,6 +83,8 @@ void draw() {
       line(width/2 + i*width/sd, center_y - 3.7*height/sd/2, width/2 + i*width/sd, center_y + 5.8*height/sd/2);
     }
   }
+  
+  saveFrame("output/BinaryClock_####.png");
   
 }
 
