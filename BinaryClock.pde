@@ -84,7 +84,7 @@ void draw() {
     }
   }
   
-  saveFrame("output/BinaryClock_####.png");
+  //saveFrame("output/BinaryClock_####.png");
   
 }
 
